@@ -1,0 +1,24 @@
+class Animal:
+	def __init__(self, name):
+
+m-u
+		self.name = name
+
+	def speak(self):
+		return "Some sound"
+
+
+class Dog(Animal):
+	def speak(self):
+		return "Woof!"
+
+
+class Cat(Animal):
+	def speak(self):
+		return "Meow!"
+
+
+if __name__ == "__main__":
+	animals = [Dog("Buddy"), Cat("Whiskers")]
+	for animal in animals:
+		print(f"{animal.name} says: {animal.speak()}")
